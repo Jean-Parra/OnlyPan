@@ -9,7 +9,10 @@
       Title="Home">
 
     <Grid Background="#FFB6B6B6">
-        
+        <Label Content="Welcome" HorizontalAlignment="Center" Height="87" Margin="0,47,0,0" VerticalAlignment="Top" Width="260" FontSize="48"/>
+        <Label Content="Valor total de las ventas" HorizontalAlignment="Left" Height="38" Margin="89,252,0,0" VerticalAlignment="Top" Width="215" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Margin="450,229,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Height="84"/>
+
 
     </Grid>
 </Page>
