@@ -9,24 +9,25 @@
       Title="Home1">
 
     <Grid Background="#FFC9C9C9">
-        <ListBox Margin="0,236,0,142" HorizontalAlignment="Center">
+        <ListBox Margin="379,181,0,197" HorizontalAlignment="Left">
             <ListBoxItem Content="1000" HorizontalAlignment="Center"/>
             <ListBoxItem Content="500" HorizontalAlignment="Center"/>
             <ListBoxItem Content="2000" HorizontalAlignment="Center"/>
         </ListBox>
-        <RadioButton GroupName="tipos"  Content="panes aliñados" HorizontalAlignment="Left" Height="36" Margin="89,221,0,0" VerticalAlignment="Top" Width="231" FontSize="18"/>
-        <RadioButton GroupName="tipos" Content="panes no aliñados" HorizontalAlignment="Left" Height="26" Margin="89,262,0,0" VerticalAlignment="Top" Width="197" FontSize="18"/>
-        <RadioButton GroupName="tipos" Content="panes especiales" HorizontalAlignment="Left" Height="26" Margin="89,300,0,0" VerticalAlignment="Top" Width="145" FontSize="18"/>
-        <Button Content="comprar" HorizontalAlignment="Center" Height="51" Margin="0,365,0,0" VerticalAlignment="Top" Width="198"/>
+        <RadioButton GroupName="tipos"  Content="panes aliñados" HorizontalAlignment="Left" Height="36" Margin="90,180,0,0" VerticalAlignment="Top" Width="230" FontSize="18" Checked="RadioButton_Checked"/>
+        <RadioButton GroupName="tipos" Content="panes no aliñados" HorizontalAlignment="Left" Height="26" Margin="90,221,0,0" VerticalAlignment="Top" Width="196" FontSize="18" Checked="RadioButton_Checked"/>
+        <RadioButton GroupName="tipos" Content="panes especiales" HorizontalAlignment="Left" Height="26" Margin="90,259,0,0" VerticalAlignment="Top" Width="144" FontSize="18" Checked="RadioButton_Checked"/>
+        <Button Content="comprar" HorizontalAlignment="Center" Height="50" Margin="0,286,0,0" VerticalAlignment="Top" Width="198" Click="Button_Click"/>
         <Label Content="Tipos" HorizontalAlignment="Left" Height="40" Margin="123,120,0,0" VerticalAlignment="Top" Width="197" FontSize="18"/>
         <Label Content="Valor" HorizontalAlignment="Left" Height="40" Margin="372,120,0,0" VerticalAlignment="Top" Width="80" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Margin="102,59,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="372,59,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="644,59,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtNombre" HorizontalAlignment="Left" Margin="102,59,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtDocumento" HorizontalAlignment="Left" Margin="372,59,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtHora" HorizontalAlignment="Left" Margin="644,59,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Nombre" HorizontalAlignment="Left" Height="48" Margin="29,50,0,0" VerticalAlignment="Top" Width="68" FontSize="14"/>
         <Label Content="Documento" HorizontalAlignment="Left" Height="27" Margin="275,54,0,0" VerticalAlignment="Top" Width="92" FontSize="14"/>
         <Label Content="Hora" HorizontalAlignment="Left" Height="27" Margin="569,54,0,0" VerticalAlignment="Top" Width="70" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Margin="618,172,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="116"/>
+        <TextBox Name="txtResults" HorizontalAlignment="Left" Margin="618,172,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="116"/>
+        <Label Name="lblCategory" Visibility="Hidden" Content="" HorizontalAlignment="Left" Margin="286,172,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

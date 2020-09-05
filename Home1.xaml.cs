@@ -23,5 +23,23 @@ namespace EventParadigm
             InitializeComponent();
         }
 
-    }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string nombre = txtNombre.Text;
+            string documento = txtDocumento.Text;
+            string hora = txtHora.Text;
+            string category = lblCategory.Content.ToString();
+         
+            txtResults.Text = nombre + "\n" + documento + "\n" + hora + "\n" + category;
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.IsChecked.Value)
+            {
+                lblCategory.Content = rb.Content.ToString();
+            }
+        }
+    }    
 }
